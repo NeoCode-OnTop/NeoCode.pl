@@ -1,0 +1,139 @@
+:root{
+--bg:#0a0f1c;
+--text:white;
+--accent:#6a00ff;
+}
+
+body.light{
+--bg:#f4f7ff;
+--text:#111;
+--accent:#5865F2;
+}
+
+body{
+margin:0;
+font-family:Arial;
+background:var(--bg);
+color:var(--text);
+transition:0.4s;
+overflow-x:hidden;
+}
+
+/* PARTICLES */
+#particles{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-2;
+}
+
+/* INTRO */
+#intro{
+position:fixed;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.intro-logo{
+font-size:70px;
+color:white;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(15px);
+}
+
+nav a{
+margin:0 10px;
+text-decoration:none;
+color:var(--text);
+}
+
+.discord-btn{
+background:#5865F2;
+padding:8px 15px;
+border-radius:8px;
+color:white;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:180px 20px;
+}
+
+.glow-text{
+font-size:60px;
+color:var(--accent);
+}
+
+/* SECTION */
+.section{
+padding:100px 20px;
+text-align:center;
+}
+
+/* SLIDER */
+.slider{
+display:flex;
+gap:30px;
+overflow-x:auto;
+padding:30px;
+}
+
+.slide{
+min-width:250px;
+background:var(--accent);
+padding:20px;
+border-radius:12px;
+color:white;
+text-align:center;
+}
+
+/* OPINIE */
+.opinion-card{
+background:#222;
+padding:30px;
+border-radius:12px;
+margin:20px auto;
+max-width:500px;
+}
+
+body.light .opinion-card{
+background:#ddd;
+color:#111;
+}
+
+/* BANNER */
+.long-banner{
+height:150px;
+margin:40px auto;
+border-radius:20px;
+background:linear-gradient(90deg,#1f1f2e,#2a2a4a);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* TEAM */
+.team-grid{
+display:flex;
+gap:40px;
+justify-content:center;
+}
+
+.team-card{
+background:var(--accent);
+padding:30px;
+border-radius:12px;
+}
